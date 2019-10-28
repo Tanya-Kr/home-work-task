@@ -11,6 +11,16 @@ public class MinValueChecker {
 //        TODO implements result
         int result = 0;
 
+        int x = values[0];
+        for (int i = 1; i < values.length; i++ ) {
+
+            if (x > values[i]) {
+                x = values[i];
+                i++;
+            }
+        }
+        result = x;
+
         return result;
     }
 

@@ -17,7 +17,7 @@ public class DivisorTest {
         int number = 2;
         int divisor = 10;
 
-        assertEquals(divisorChecker.checkDivisor(number, divisor), "The number 2 is divisor of the number 10");
+        assertEquals(divisorChecker.checkDivisor(divisor, number), "The number 2 is divisor of the number 10");
     }
 
     @Test
@@ -25,6 +25,6 @@ public class DivisorTest {
         int number = 7;
         int divisor = 50;
 
-        assertEquals(divisorChecker.checkDivisor(number, divisor), "The number 7 is not divisor of the number 50");
+        assertEquals(divisorChecker.checkDivisor(divisor, number), "The number 7 is not divisor of the number 50");
     }
 }

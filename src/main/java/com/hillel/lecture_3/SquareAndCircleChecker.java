@@ -11,6 +11,12 @@ public class SquareAndCircleChecker {
 //        TODO implements result
         String result = "";
 
+        if (Math.sqrt(squareArea) >= 2 * Math.sqrt(circleArea / Math.PI)) {
+            result = "The circle is in the square";
+        } else {
+            result = "The circle is not in the square";
+        }
+
         return result;
     }
 
@@ -18,6 +24,12 @@ public class SquareAndCircleChecker {
 
 //        TODO implements result
         String result = "";
+
+        if (Math.PI * squareArea < 2 * circleArea) {
+            result = "The square is in the circle";
+        } else {
+            result = "The square is not in the circle";
+        }
 
         return result;
     }

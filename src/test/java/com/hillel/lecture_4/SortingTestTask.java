@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 /**
- * Написать программу, которая сортире массив от минимума в максимум и наоборот
+ * Написать программу, которая сортировать массив от минимума в максимум и наоборот
  */
 public class SortingTestTask {
 

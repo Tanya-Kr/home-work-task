@@ -19,7 +19,7 @@ public class LinearEquationTest {
         int a = 4;
         int b = 10;
 
-        assertEquals(linearEquationChecker.linearEquation(a, b), -2.0);
+        assertEquals(linearEquationChecker.linearEquation(a, b), -2);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class LinearEquationTest {
         int a = 0;
         int b = 10;
 
-        assertEquals(linearEquationChecker.linearEquation(a, b), 0.0);
+        assertEquals(linearEquationChecker.linearEquation(a, b), 0);
     }
 
     @Test
@@ -35,6 +35,6 @@ public class LinearEquationTest {
         int a = 4;
         int b = 0;
 
-        assertEquals(linearEquationChecker.linearEquation(a, b), 0.0);
+        assertEquals(linearEquationChecker.linearEquation(a, b), 0);
     }
 }
