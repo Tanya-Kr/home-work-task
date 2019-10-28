@@ -2,6 +2,10 @@
 
 <suite name="${userName} suite">
 
+    <listeners>
+        <listener class-name="com.hillel.conf.TestListener" />
+    </listeners>
+
     <test name="${userName} tests">
         <packages>
             <package name="com.hillel.*"/>
