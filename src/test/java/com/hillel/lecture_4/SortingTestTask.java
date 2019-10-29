@@ -21,7 +21,7 @@ public class SortingTestTask {
 
     @Test
     public void checkFromMaxToMinTest() {
-        int[] data = { 234, 758, -35, 345, 24535, -46, 234, -13, 145 };
+        int[] data = { 234, 758, -35, 345, 24535, -46, 214, -13, 145 };
         int[] expectedResult = {24535, 758, 345, 234, 214, 145, -13, -35, -46};
 
         assertEquals(sortingChecker.fromMaxToMin(data), expectedResult) ;
