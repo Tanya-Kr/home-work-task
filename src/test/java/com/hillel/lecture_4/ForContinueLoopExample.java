@@ -15,15 +15,22 @@ public class ForContinueLoopExample {
 //            }
 //        }
 
-        int[] values = { -10, -5, 10, 45, -34, 0, 0, 24, 2 };
-        int x = values[0];
-        for (int i = 1; i < values.length; i++ ) {
+        int[] data = { 20, 4, 3, 10, 2, -5, 0, -13, 1 };
 
-            if (x > values[i]) {
-                x = values[i];
+        int x = data[0];
+        for (int i = 1; i < data.length; i++ ) {
+
+            if (x > data[i]) {
+                x = data[i];
                 i++;
             }
+            System.out.println(x);
         }
-        System.out.println(x);
+
     }
+
 }
+
+
+
+
