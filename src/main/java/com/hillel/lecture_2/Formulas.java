@@ -9,7 +9,7 @@ public class Formulas {
 
     @Step
     public double calculate9Formula(double x) {
-        double result = Math.pow(1.1 * Math.E, -x) + Math.abs(Math.cos(Math.sqrt(Math.PI * x)) - 3.0 / 8.0);
+        double result = 1.1f * Math.exp(-x) + Math.abs(Math.cos(Math.sqrt(Math.PI * x))) - (3f / 8f);
 //        TODO implement formula 9
         return result;
     }
@@ -37,7 +37,7 @@ public class Formulas {
 
     @Step
     public double calculate13Formula(double x) {
-        double result = Math.pow(Math.pow(Math.E, -2 + x), 1.0 / 5.0) * 1 / Math.sqrt(Math.pow(x, 2) + Math.pow(x, 4) + Math.log(Math.abs(x - 3.14)));
+        double result = (Math.pow(Math.exp(-2 + x), (1 / 2))) * (1 / (Math.sqrt(Math.pow(x, 2) + Math.pow(x, 4) + Math.log(Math.abs(x - 3.14d)))));
 //        TODO implement formula 13
         return result;
     }
