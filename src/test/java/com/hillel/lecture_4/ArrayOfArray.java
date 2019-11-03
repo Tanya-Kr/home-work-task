@@ -9,23 +9,25 @@ public class ArrayOfArray {
 //        int b = array[1][1];
 //        System.out.println(a[1]);
 //        System.out.println(b);
-        int[] values = { 20, 4, 3, 10, 2, -5, 0, -13, 1 };
-        int[] result = new int[values.length];
+//        int[] values = { 20, 4, 3, 10, 2, -5, 0, -13, 1 };
+//        int[] result = new int[values.length];
+//
+//        for(int i = result.length-1; i > 0; i--) {
+//            for (int j = 0; j < i; j++) {
+//                if (values[j] > values[j + 1]) {
+//                    int tmp = values[j];
+//                    values[j] = values[j + 1];
+//                    values[j + 1] = tmp;
+//                }
+//            }
+//        }
+//
+//        for (int i = 0; i < result.length; i++){
+//            result[i] = values[i];
+//            System.out.printf(" " + result[i]);
+//        }
 
-        for(int i = result.length-1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                if (values[j] > values[j + 1]) {
-                    int tmp = values[j];
-                    values[j] = values[j + 1];
-                    values[j + 1] = tmp;
-                }
-            }
-        }
 
-        for (int i = 0; i < result.length; i++){
-            result[i] = values[i];
-            System.out.printf(" " + result[i]);
-        }
     }
 
 }
