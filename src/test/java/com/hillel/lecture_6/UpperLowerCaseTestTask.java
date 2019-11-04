@@ -38,7 +38,7 @@ public class UpperLowerCaseTestTask {
     @DataProvider(name = "upperCaseStringProvider")
     public static Object[][] upperCaseStringProvider() {
         return new Object[][] {
-                { "jAVa", "java"},
+                { "jAVa", "JAVA"},
                 { "A String variable contains a collection of characters surrounded by double quotes",
                   "A STRING VARIABLE CONTAINS A COLLECTION OF CHARACTERS SURROUNDED BY DOUBLE QUOTES" },
                 { "TeSt HOme tAsK", "TEST HOME TASK"}
@@ -48,7 +48,7 @@ public class UpperLowerCaseTestTask {
     @DataProvider(name = "lowerCaseStringProvider")
     public static Object[][] lowerCaseStringProvider() {
         return new Object[][] {
-                { "java", "JAVA"},
+                { "JAVa", "java"},
                 { "A StrInG variable ContainS a collection oF chaTactErs surRoundEd by dOuBle quotEs",
                   "a string variable contains a collection of chatacters surrounded by double quotes" },
                 { "TeSt HOme tAsK", "test home task"}

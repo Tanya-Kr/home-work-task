@@ -27,7 +27,7 @@ public class LetterRemovalTestTask {
                  "Drop your socks nd grb your Crocs, we're bout to get wet on this ride."},
                 {"I told you, I don't want to join your super secret boy band.", "o",
                  "I tld yu, I dn't want t jin yur super secret by band."},
-                {"Genius, billionaire, playboy, philanthropist.", "l", "Genius, biionaire, payboy, phianthropist"},
+                {"Genius, billionaire, playboy, philanthropist.", "l", "Genius, biionaire, payboy, phianthropist."},
         };
     }
 }
