@@ -54,6 +54,9 @@ public class StringExample {
             String hello = "Hello student!";
 
             String[] split = hello.split(" ");
+            for (String word : hello.split(" ")) {
+                System.out.println(word.substring(0,1).toUpperCase() + word.substring(1));
+            }
             System.out.println("split " + split.length);
 
             for (String s: split){
