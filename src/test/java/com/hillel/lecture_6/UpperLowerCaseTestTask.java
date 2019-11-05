@@ -69,7 +69,7 @@ public class UpperLowerCaseTestTask {
         };
     }
 
-    @DataProvider(name = "sentenceProviderForEachWord")
+    @DataProvider(name = "sentenceProviderForEachLetter")
     public static Object[][] sentenceProviderForEachLetter() {
         return new Object[][] {
                 { "hello java!", "Hello Java!"},
