@@ -12,7 +12,8 @@ public class CountWordsOfEachLengthChecker {
 
 //        TODO implements result
         int result = 0;
-
+        sentence = sentence.replace(".", "");
+        sentence = sentence.replace(",", "");
         for (String words : sentence.split(" ")) {
             if (words.length() == wordLength) {
                 result++;

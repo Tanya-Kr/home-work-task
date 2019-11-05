@@ -14,6 +14,15 @@ public class LetterRemovalChecker {
 //        TODO implements result
         String result = "";
 
+        char[] chars = sentence.toCharArray();
+
+        for (int i = 0; i < chars.length; i++) {
+            String charToRemove = String.valueOf(chars[i]);
+            if (letterFoRemove.equals(charToRemove)) {
+                sentence = sentence.replaceAll(charToRemove,"");
+            }
+        }
+        result = sentence;
         return result;
     }
 }

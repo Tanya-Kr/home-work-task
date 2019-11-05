@@ -21,28 +21,37 @@ public class TraningPlace {
 //
 //            n += w;
 
-      String word = "help";
-      char[] letters = word.toCharArray();
-//      char[] words = new char[word.length()];
+//      String word = "help";
+//      char[] letters = word.toCharArray();
+//
+//            for (int i = 0; i < letters.length; i++) {
+//                if (i != letters.length - 1) {
+//                    char letterToEnd = letters[i];
+//                    for (int j = letters.length; j > i; j--) {
+//
+//
+//                        letters[i] = letters[i + 1];
+//
+//                        letters[letters.length - 1] = letterToEnd;
+//                    }
+//                }
+//            word = String.valueOf(letters);
+//            System.out.println(word);
+//        }
 
-//        for (int i = 0; i < letters.length; i++) {
+            String code = "AX6BYU56UX6CV6BNT7NM 287430";
 
-            for (int j = 0; j < letters.length; j++) {
-                if (j != letters.length - 1) {
-                    char letterToEnd = letters[j];
-                    letters[letters.length - 1] = letterToEnd;
-                    letters[j] = letters[j + 1];
-//                } else {
-//                    letters[j] = letterToEnd;
-                }
+            String code1 = code.substring(0, code.indexOf(" "));
+            String code2 = code.substring(code.indexOf(" ")+1);
 
-//            }
-            word = String.valueOf(letters);
-            System.out.println(word);
-        }
+            char[] code1Chars = code1.toCharArray();
 
+            for (int i = 0; i < code1Chars.length; i++) {
 
+            }
 
+            System.out.println(code1);
+            System.out.println(code2);
 
 
     }
