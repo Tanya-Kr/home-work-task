@@ -20,6 +20,31 @@ public class TraningPlace {
 //            w = w.toUpperCase().replace(w.substring(1), w.substring(1).toLowerCase());
 //
 //            n += w;
+
+      String word = "help";
+      char[] letters = word.toCharArray();
+//      char[] words = new char[word.length()];
+
+//        for (int i = 0; i < letters.length; i++) {
+
+            for (int j = 0; j < letters.length; j++) {
+                if (j != letters.length - 1) {
+                    char letterToEnd = letters[j];
+                    letters[letters.length - 1] = letterToEnd;
+                    letters[j] = letters[j + 1];
+//                } else {
+//                    letters[j] = letterToEnd;
+                }
+
+//            }
+            word = String.valueOf(letters);
+            System.out.println(word);
+        }
+
+
+
+
+
     }
 
 }
