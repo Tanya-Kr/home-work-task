@@ -32,10 +32,13 @@ public class UpperLowerCaseChecker {
 //        TODO implements result
         String result = "";
 
-        for (String word : sentence.split(". ")) {
-            word = word.substring(0,1).toUpperCase() + word.substring(1);
+        String delimeter = "(?<=\\. )";
+        for (String word : sentence.split(delimeter)) {
+            System.out.println(word);
+            word = word.substring(0, 1).toUpperCase() + word.substring(1);
             result += word;
         }
+        result = result.trim();
 
         return result;
     }
@@ -48,8 +51,10 @@ public class UpperLowerCaseChecker {
 
         for (String word : sentence.split(" ")) {
             word = word.substring(0,1).toUpperCase() + word.substring(1);
-            result += word;
+            result += word + " ";
         }
+
+        result = result.trim();
 
         return result;
     }

@@ -19,21 +19,18 @@ public class ProductCodeValidationChecker {
 
         int leng = code1.length();
         char[] code1Chars = code1.toCharArray();
-
         String[] numbers = new String[6];
         int counter = 0;
         int index = 0;
+
 
         for (int i = 0; i < code1Chars.length; i++) {
             if (Character.isDigit(code1Chars[i])) {
                 numbers[index] = Character.toString(code1Chars[i]);
                 index++;
                 counter += 1;
-            }
-        }
 
-        if (counter < 6) {
-            isValid = false;
+            }
         }
 
         int[] results = new int [6];
@@ -46,9 +43,11 @@ public class ProductCodeValidationChecker {
             }
         }
 
-        if (res == Integer.parseInt(code2)) {
+        if (code1.equals(code1.toUpperCase()) && res == Integer.parseInt(code2) && counter >= 6) {
             isValid = true;
         }
+
+
 
         return isValid;
     }

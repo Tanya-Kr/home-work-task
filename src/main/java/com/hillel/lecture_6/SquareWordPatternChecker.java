@@ -14,6 +14,17 @@ public class SquareWordPatternChecker {
 //        TODO implements result
         String result = "";
 
+        String  newWord = "";
+        String allWords = "";
+        for (int i = 0; i < word.length(); i++) {
+
+            newWord = word.substring(1, word.length()).concat(word.substring(0, 1));
+            allWords += word.concat(", ");
+            word = newWord;
+        }
+
+        result = allWords.substring(0, allWords.length()-2);
+
         return result;
     }
 
