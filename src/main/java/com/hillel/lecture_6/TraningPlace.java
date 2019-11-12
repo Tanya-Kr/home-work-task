@@ -24,20 +24,27 @@ public class TraningPlace {
 //            n += w;
 
 
-        String sentence = "a String in Java is actually an object, which contain methods that can perform certain operations on strings." +
-                " for example, the length of a string can be found with the length() method";
-        String result = "";
-        String delimeter = "(?<=\\. )";
-        for (String word : sentence.split(delimeter)) {
-            System.out.println(word);
-            word = word.substring(0,1).toUpperCase() + word.substring(1);
-            result += word;
+//        String sentence = "a String in Java is actually an object, which contain methods that can perform certain operations on strings." +
+//                " for example, the length of a string can be found with the length() method";
+//        String result = "";
+//        String delimeter = "(?<=\\. )";
+//        for (String word : sentence.split(delimeter)) {
+//            System.out.println(word);
+//            word = word.substring(0,1).toUpperCase() + word.substring(1);
+//            result += word;
+//        }
+//
+//        System.out.println(result);
+
+        long actual = 38458215;
+        long result;
+        char[] numbers = Long.toString(actual).toCharArray();
+
+        for (int i = 0; i < numbers.length; i++) {
+
         }
 
-        System.out.println(result);
-
-
-
+//        System.out.println(result);
     }
 
 

@@ -18,6 +18,22 @@ package com.hillel.basic.exam;
 public class JadenCase {
 
     public String toJadenCase(String phrase) {
-        return null;
+        String result = "";
+
+        if (phrase.length() > 1) {
+            for (String word : phrase.split(" ")) {
+                word = word.substring(0,1).toUpperCase() + word.substring(1);
+                result += word + " ";
+            }
+            result = result.trim();
+
+        }else if(phrase.isEmpty()){
+            return null;
+
+        } else {
+            return null;
+        }
+
+        return result;
     }
 }
