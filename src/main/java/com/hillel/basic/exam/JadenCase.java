@@ -20,15 +20,14 @@ public class JadenCase {
     public String toJadenCase(String phrase) {
         String result = "";
 
-        if (phrase.length() > 1) {
+
+        if (phrase != null && !phrase.isEmpty()) {
             for (String word : phrase.split(" ")) {
                 word = word.substring(0,1).toUpperCase() + word.substring(1);
                 result += word + " ";
             }
-            result = result.trim();
 
-        }else if(phrase.isEmpty()){
-            return null;
+            result = result.trim();
 
         } else {
             return null;

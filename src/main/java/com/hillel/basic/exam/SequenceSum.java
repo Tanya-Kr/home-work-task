@@ -29,17 +29,21 @@ public class SequenceSum {
         int sum = 0;
         String result = "";
         if (value > 0) {
+
             for (int i = 0; i <= value; i++) {
                 sum += i;
                 String res = Integer.toString(i);
+
                 if (i < value) {
                     result = result.concat(res + "+");
+
                 } else {
                     result = result.concat(res + " = " + sum);
                 }
             }
         } else if (value == 0) {
             result = "0 = 0";
+
         } else {
             result = value + " < 0";
         }

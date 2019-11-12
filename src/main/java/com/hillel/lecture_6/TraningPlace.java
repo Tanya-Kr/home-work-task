@@ -1,5 +1,6 @@
 package com.hillel.lecture_6;
 
+import java.lang.reflect.Array;
 import java.util.SplittableRandom;
 
 public class TraningPlace {
@@ -37,11 +38,24 @@ public class TraningPlace {
 //        System.out.println(result);
 
         long actual = 38458215;
+        String StringActual = Long.toString(actual);
         long result;
-        char[] numbers = Long.toString(actual).toCharArray();
+        char[] number = Long.toString(actual).toCharArray();
+        long[] allNumbers = new long[number.length];
 
-        for (int i = 0; i < numbers.length; i++) {
-
+//        for (int i = 1; i < number.length; i++) {
+//            String x = StringActual;
+//            x = x.subSequence(0, i) + x.substring(i+2, x.length()-1).concat(x.substring(i, i+1));
+//
+//            System.out.println(x);
+////            allNumbers[i] = x;
+//        }
+        char[] newNumber = new char[number.length];
+        for (int i = 0; i < number.length; i++) {
+            char temp = number[i];
+            newNumber[i] = number[i+1];
+            newNumber[number.length - 1] = temp;
+            System.out.println(newNumber[i]);
         }
 
 //        System.out.println(result);

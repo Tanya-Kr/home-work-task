@@ -20,7 +20,7 @@ public class SquareWordPatternTestTask {
 
     @Test(dataProvider = "stringProvider")
     public void squareWordPatternTest(String word, String expectedResult) {
-        assertEquals(squareWordPatternChecker.applySquareWordPattern(word), expectedResult); ;
+        assertEquals(squareWordPatternChecker.applySquareWordPattern(word), expectedResult);
     }
 
     @DataProvider(name = "stringProvider")
