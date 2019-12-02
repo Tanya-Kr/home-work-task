@@ -19,25 +19,22 @@ public class NumberRotator {
 
     public static long rotate(long n) {
 
-        String StringActual = Long.toString(n);
-        long result;
-        char[] number = Long.toString(n).toCharArray();
-        long[] allNumbers = new long[number.length];
+        String stringActual = Long.toString(n);
         String x = "";
-        String maxValue = StringActual;
+        String maxValue = stringActual;
 
-        for (int i = 0; i < number.length+1; i++) {
-
-            x = StringActual.substring(0, i).concat(StringActual.substring(i+1).concat(StringActual.substring(i, i+1)));
-            StringActual = x;
+        for (int i = 0; i < stringActual.length(); i++) {
+            x = stringActual.substring(0, i).concat(stringActual.substring(i+1).concat(stringActual.substring(i, i+1)));
+            stringActual = x;
 
             if (Long.parseLong(maxValue) < Long.parseLong(x)) {
-
                 maxValue = x;
-
-                return Long.parseLong(x);
             }
         }
+<<<<<<< HEAD
         return Long.parseLong(x);
+=======
+        return Long.parseLong(maxValue);
+>>>>>>> 3481c8de5a25a244e5d608c968337e75c3c8efa8
     }
 }
