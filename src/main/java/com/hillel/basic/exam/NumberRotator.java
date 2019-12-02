@@ -38,6 +38,6 @@ public class NumberRotator {
                 return Long.parseLong(x);
             }
         }
-        return;
+        return Long.parseLong(x);
     }
 }
