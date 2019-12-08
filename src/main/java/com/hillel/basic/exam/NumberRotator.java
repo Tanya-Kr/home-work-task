@@ -31,6 +31,10 @@ public class NumberRotator {
                 maxValue = x;
             }
         }
+<<<<<<< HEAD
+        return Long.parseLong(x);
+=======
         return Long.parseLong(maxValue);
+>>>>>>> 3481c8de5a25a244e5d608c968337e75c3c8efa8
     }
 }
