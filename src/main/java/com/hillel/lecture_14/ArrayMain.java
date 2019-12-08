@@ -11,8 +11,19 @@ public class ArrayMain {
         listOfString.add("yellow");
         listOfString.add("green");
         listOfString.add("red");
+        listOfString.add("rfffffed");
 
-        System.out.println(listOfString.size());
+        for (String s : listOfString) {
+
+            if (s.length() >= s.length()){
+                System.out.println(s.length());
+            }
+
+        }
+
+
+
+//        System.out.println(revreceList.toString());
 
         listOfString.remove(2);
 

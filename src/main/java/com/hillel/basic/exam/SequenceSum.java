@@ -18,7 +18,7 @@ package com.hillel.basic.exam;
  * Input: -15
  * Output: -15 < 0
  * <p>
- * Input: > 0
+ * Input: = 0
  * Output: 0 = 0
  */
 
@@ -50,5 +50,18 @@ public class SequenceSum {
 
         return result;
 
+//        if (value == 0) {
+//            return "0 = 0";
+//        }
+//        if (value < 0) {
+//            return value + " < 0";
+//        }
+//        String s = "";
+////        int sum = 0;
+//        for (int i = 0; i <= value; i++){
+//            s = s + i + "+";
+//            sum = sum + i;
+//        }
+//        return s.substring(0,s.length()-1) + " = " + sum;
     }
 }

@@ -26,10 +26,17 @@ package com.hillel.basic.exam;
 public class Dubster {
 
     public static String songDecoder(String song) {
+//<<<<<<< HEAD
 
         String result = song.replace("WUB", " ");
         result = result.trim().replaceAll("[\\s]{2,}", " ");
         return result;
 
+//=======
+//        String result = song.replaceAll("WUBWUBWUB", " ")
+//                .replaceAll("WUB", " ");
+////                .replaceAll("  ", " ");
+//        return result.trim();
+//>>>>>>> upstream/master
     }
 }
