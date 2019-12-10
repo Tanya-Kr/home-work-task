@@ -11,15 +11,22 @@ public class ArrayMain {
         listOfString.add("yellow");
         listOfString.add("green");
         listOfString.add("red");
+        listOfString.add("red");
         listOfString.add("rfffffed");
 
-        for (String s : listOfString) {
+        int temp = 0;
+//        System.out.println(listOfString.toString());
+        for (int i = 1; i <= listOfString.size(); i++) {
 
-            if (s.length() >= s.length()){
-                System.out.println(s.length());
+            if (listOfString.get(temp).equals(listOfString.get(i))){
+
+                listOfString.remove(temp);
+                temp = i;
             }
-
+            System.out.println(listOfString.toString());
         }
+        System.out.println(listOfString.toString());
+
 
 
 

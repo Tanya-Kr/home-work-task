@@ -27,12 +27,13 @@ public class ArraysChecker {
 
 //        TODO implements result
         String result = "";
-
+        String temp = "";
         for (String s : list) {
 
-            if (s.length() >= s.length()){
-                result = s;
+            if (s.length() >= temp.length()){
+                temp = s;
             }
+            result = temp;
 
         }
         return result;
@@ -52,6 +53,16 @@ public class ArraysChecker {
     public List<String> removeDuplicates(List<String> list) {
 
 //        TODO implements result
+
+//        int temp = 0;
+//        for (int i = 1; i <= list.size(); i++) {
+//
+//            if (list.get(temp).equals(list.get(i))){
+//
+//                list.remove(temp);
+//                temp = i;
+//            }
+//        }
 
         return list;
     }

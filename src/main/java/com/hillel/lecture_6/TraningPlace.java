@@ -22,6 +22,8 @@ public class TraningPlace {
         }
         System.out.println(maxValue);
 
+
+
         }
 
 
